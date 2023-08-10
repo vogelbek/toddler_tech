@@ -10,3 +10,7 @@ RUN apt-get update && \
 # COPY your-app/ /app/
 # WORKDIR /app
 # RUN pip install -r requirements.txt
+
+docker build \
+    -t gcr.io/stunning-choir-394217/github.com/vogelbek/toddler_tech:$COMMIT_SHA \
+    .
